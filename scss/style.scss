@@ -1,0 +1,76 @@
+@import '../partials/variables'; // colors, fonts etc...
+
+@import '../partials/mixins'; // custom mixins
+
+@import '../partials/layout'; // responsive grid and media querieshtml,
+
+*,
+:before,
+:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.section_transition{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin: auto auto;
+  overflow: hidden;
+}
+.section-content{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  height:100%;
+   & h1{
+    width: 100%;
+    margin: auto;
+    display: block;
+   }
+   & button{
+    display: block;
+    margin: 2rem auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $color-4;
+   }
+}
+.section-one{
+	background-color: $color-1;
+	height: 100%;
+  z-index: 5;
+}
+.section-two{
+	background-color: $color-2;
+	height: 100%;
+  color: $color-4;
+}
+.section-three{
+  background-color: $color-3;
+  height: 100%;
+}
+#test2{
+  height: 300px;
+  background-color: gray;
+}
+.animated{
+	animation: animate 3s ease;
+}
+.fadeIn {
+  z-index: 10;
+}
+
+
