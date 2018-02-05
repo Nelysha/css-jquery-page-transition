@@ -95,6 +95,14 @@ body {
     font-weight: bold;
     color: #ffffff; }
 
+#nav-container {
+  height: 100%;
+  display: flex;
+  align-items: center; }
+  #nav-container .nav-content {
+    z-index: 9999;
+    margin-top: 9rem; }
+
 .section-one {
   background-color: #4089a6;
   height: 100%;
@@ -108,10 +116,6 @@ body {
 .section-three {
   background-color: #048507;
   height: 100%; }
-
-#test2 {
-  height: 300px;
-  background-color: gray; }
 
 .animated {
   animation: animate 3s ease; }

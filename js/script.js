@@ -5,7 +5,10 @@ $(".btn_nav").click(function() {
     .fadeOut(100)
     .delay(2800)
     .fadeIn();
-
+  $("#nav-container")
+  .fadeOut(100)
+  .delay(2800)
+  .fadeIn();
   setTimeout(function() {
     $(".section_transition").removeClass("animated");
   }, 3200);
