@@ -13,43 +13,53 @@
 </head>
 
 <body>
+    <!-- NAVIGATION BUTTONS -->
     <div id="nav-container">
         <div class="container">
             <div class="row">
                <div class="nav-content mx-auto">
-                <button name="one" class="btn_nav btn btn-danger">Go to section one</button>
-                <button name="two" class="btn_nav btn btn-success">Go to section two</button>
-                <button name="three" class="btn_nav btn btn-warning">Go to section three</button>
+                <!-- ADD BUTTON NAME AS SECTION ID WHERE YOU WANT TO LINK -->
+                <button name="section-one" class="btn_nav btn btn-danger col-sm-12 col-md-4">Go to section one</button>
+                <button name="section-two" class="btn_nav btn btn-success col-sm-12 col-md-4">Go to section two</button>
+                <button name="section-three" class="btn_nav btn btn-warning col-sm-12 col-md-4">Go to section three</button>
                </div>
             </div>
         </div>
     </div>
+    <!-- SECTIONS FOR TRANSITION -->
      <section class=" section_transition section-one">
         <div class="section-content">
             <div class="container">
-                <h1>SECTION ONE</h1>
+                <h1 class="display-4">SECTION ONE</h1>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris facilisis tellus ac commodo sollicitudin.  </p>
+                <p>Ut ultricies lorem in nisi bibendum, ornare dapibus justo consectetur. Pellentesque sed ex non tellus aliquam elementum a ac nibh. Quisque sit amet tempus risus. Quisque ut dui vel lectus ullamcorper faucibus.</p>
             </div>
         </div>
     </section>
     <section class="container-fluid section_transition section-two">
           <div class="section-content">
             <div class="container">
-                <h1>SECTION TWO</h1>
+                <h1 class="display-4">SECTION TWO</h1>
+                <p class="lead">Nullam bibendum purus urna, vehicula sagittis enim ullamcorper nec. Quisque at risus suscipit, facilisis tellus a, mattis eros.</p>
+                <p>Nulla congue justo massa, quis venenatis turpis porttitor laoreet. Mauris maximus orci nulla, id dapibus odio facilisis eu. Aliquam ligula ex, hendrerit in felis a, finibus dignissim magna. Duis iaculis libero eu felis pharetra, et sagittis mauris ornare. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque consectetur orci non viverra molestie.</p>
             </div>
         </div>
     </section>
     <section class="container-fluid section_transition section-three">
           <div class="section-content">
             <div class="container">
-                <h1>SECTION THREE</h1>
+                <h1 class="display-4">SECTION THREE</h1>
+                <p class="lead">Ut malesuada tincidunt augue, sit amet aliquet tellus.</p>
+                <p>Integer auctor ex dolor, vitae malesuada nulla gravida ac. Quisque augue justo, suscipit vitae aliquet eget, rutrum a enim. Duis semper lorem mauris, eget cursus nulla sodales eu. Curabitur leo lectus, dapibus vitae ullamcorper at, consectetur sed arcu.</p>
             </div>
         </div>
     </section>
  
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+    <!-- jQuery AND BOOTSTRAP4 SCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8" async defer></script>
+    <!-- CUSTOM JAVASCRIPT -->
+    <script src="js/script.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 
 </html>

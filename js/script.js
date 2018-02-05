@@ -1,3 +1,5 @@
+/* SELECT NAVIGATION BUTTON AND ADD/REMOVE CLASS
+******************************************/
 $(".btn_nav").click(function() {
   // animate content
   $(".section_transition").addClass("animated");
@@ -18,10 +20,12 @@ $(".btn_nav").click(function() {
     $(".section_transition").removeClass("fadeIn");
   }, 1500);
 });
+/*CHECK BUTTON NAME AND ADD A CLASS FADEIN TO SECTION
+******************************************************/
 $(".btn_nav").click(function() {
     var name = $(this).attr('name');
     setTimeout(function () {
-      $(".section-"+name).addClass('fadeIn');
+      $("."+name).addClass('fadeIn');
     }, 1500);
 });
 

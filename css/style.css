@@ -54,6 +54,8 @@
     opacity: 1; }
   100% {
     transform: scale(1, 1); } }
+/* HTML SETTINGS
+***********************/
 *,
 :before,
 :after {
@@ -68,6 +70,8 @@ body {
   margin: 0;
   padding: 0; }
 
+/* TRANSITION SETTINGS
+*************************/
 .section_transition {
   position: fixed;
   top: 0;
@@ -87,22 +91,27 @@ body {
   .section-content h1 {
     width: 100%;
     margin: auto;
-    display: block; }
-  .section-content button {
     display: block;
-    margin: 2rem auto;
-    text-transform: uppercase;
     font-weight: bold;
-    color: #ffffff; }
+    color: #D3D0D0; }
+  .section-content p {
+    color: #D3D0D0; }
 
+/* NAVIGATION BUTTONS
+***************************/
 #nav-container {
-  height: 100%;
-  display: flex;
-  align-items: center; }
+  height: 100%; }
   #nav-container .nav-content {
     z-index: 9999;
-    margin-top: 9rem; }
+    margin-top: 2rem; }
+  #nav-container button {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+    margin: -2px; }
 
+/* SECTION SETTTINGS
+*************************/
 .section-one {
   background-color: #4089a6;
   height: 100%;
@@ -110,13 +119,14 @@ body {
 
 .section-two {
   background-color: #283040;
-  height: 100%;
-  color: #ffffff; }
+  height: 100%; }
 
 .section-three {
   background-color: #048507;
   height: 100%; }
 
+/* ANIMATION SETTINGS
+****************************/
 .animated {
   animation: animate 3s ease; }
 

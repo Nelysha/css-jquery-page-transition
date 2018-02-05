@@ -4,6 +4,9 @@
 
 @import '../partials/layout'; // responsive grid and media querieshtml,
 
+
+/* HTML SETTINGS
+***********************/
 *,
 :before,
 :after {
@@ -19,6 +22,8 @@ body{
 	margin: 0;
 	padding: 0;
 }
+/* TRANSITION SETTINGS
+*************************/
 .section_transition{
   position: fixed;
   top: 0;
@@ -39,25 +44,32 @@ body{
     width: 100%;
     margin: auto;
     display: block;
+    font-weight: bold;
+    color: $color-5;
    }
-   & button{
-    display: block;
-    margin: 2rem auto;
+   & p{
+    color: $color-5;
+   }
+}
+
+/* NAVIGATION BUTTONS
+***************************/
+#nav-container{
+  height: 100%; 
+  & .nav-content{
+    z-index: 9999;
+    margin-top: 2rem;
+  }
+  & button{
     text-transform: uppercase;
     font-weight: bold;
     color: $color-4;
-   }
-}
-#nav-container{
-  height: 100%;
-  display: flex;
-  align-items: center;
-  & .nav-content{
-    z-index: 9999;
-    margin-top: 9rem;
+    margin: -2px;
   }
-  
 }
+
+/* SECTION SETTTINGS
+*************************/
 .section-one{
 	background-color: $color-1;
 	height: 100%;
@@ -66,12 +78,14 @@ body{
 .section-two{
 	background-color: $color-2;
 	height: 100%;
-  color: $color-4;
 }
 .section-three{
   background-color: $color-3;
   height: 100%;
 }
+
+/* ANIMATION SETTINGS
+****************************/
 .animated{
 	animation: animate 3s ease;
 }
